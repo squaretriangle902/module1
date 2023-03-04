@@ -2,6 +2,15 @@
 {
     public static class Task7
     {
+        public static void Execute()
+        {
+            int[] array = new int[15];
+            RandomFiller.FillArrayWithRandom(array, lowerBound: -10, upperBound: 10);
+            ConsoleWriter.ConsoleWriteArray(array);
+            BubleSort(array);
+            ConsoleWriter.ConsoleWriteArray(array);
+            ConsoleWriteSortedArrayMinAndMax(array);
+        }
         private static void SwapWithNextIfGreater(int[] array, int i)
         {
             if (array[i] > array[i + 1])
@@ -28,16 +37,6 @@
         private static void ConsoleWriteSortedArrayMinAndMax(int[] array)
         {
             Console.WriteLine("min: {0}; max: {1}", array.First().ToString(), array.Last().ToString());
-        }
-
-        public static void Execute()
-        {
-            int[] array = new int[15];
-            RandomFiller.FillArrayWithRandom(array, lowerBound: -10, upperBound: 10);
-            ConsoleWriter.ConsoleWriteArray(array);
-            BubleSort(array);
-            ConsoleWriter.ConsoleWriteArray(array);
-            ConsoleWriteSortedArrayMinAndMax(array);
         }
     }
 }

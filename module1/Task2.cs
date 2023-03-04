@@ -8,9 +8,12 @@
             WriteTriangle(height);
         }
 
-        private static void WriteTriangle(int height)
+        public static void WriteTriangle(int height)
         {
-            ConsoleWriter.WriteTriangle(topOffset: 0, asteriskCountIncrement: 1, height);
+            for (int i = 1; i <= height; i++)
+            {
+                Console.WriteLine(new string('*', i));
+            }
         }
     }
 }

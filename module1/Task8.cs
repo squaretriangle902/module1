@@ -2,6 +2,15 @@
 {
     public static class Task8
     {
+        public static void Execute()
+        {
+            int[,,] array3d = new int[2, 3, 4];
+            RandomFiller.FillArray3dWithRandom(array3d, lowerBound: -10, upperBound: 10);
+            ConsoleWriteArray3d(array3d);
+            Array3dFill(array3d, number: 0);
+            ConsoleWriteArray3d(array3d);
+        }
+
         private static void ConsoleWriteArray3d(int[,,] array3d)
         {
             for (int i = array3d.GetLowerBound(0); i <= array3d.GetUpperBound(0); i++)
@@ -32,15 +41,6 @@
                     }
                 }
             }
-        }
-
-        public static void Execute()
-        {
-            int[,,] array3d = new int[2, 3, 4];
-            RandomFiller.FillArray3dWithRandom(array3d, lowerBound: -10, upperBound: 10);
-            ConsoleWriteArray3d(array3d);
-            Array3dFill(array3d, number: 0);
-            ConsoleWriteArray3d(array3d);
         }
     }
 }
