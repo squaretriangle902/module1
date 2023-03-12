@@ -4,16 +4,15 @@
     {
         public static void Execute()
         {
-            int trianglesNumber = ConsoleInputReader.ReadIntUntilCorrect("Input count of triangles: ");
-            WriteTriangles(trianglesNumber);
-
+            int triangleCount = ConsoleInputReader.ReadIntUntilCorrect("Input count of triangles: ");
+            WriteTriangles(triangleCount);
         }
 
-        private static void WriteTriangles(int trianglesNumber)
+        private static void WriteTriangles(int triangleCount)
         {
-            for (int i = 1; i <= trianglesNumber + 1; i++)
+            for (int i = 1; i <= triangleCount + 1; i++)
             {
-                ConsoleWriter.WriteTriangle(trianglesNumber, asteriskCountIncrement: 2, i);
+                ConsoleWriter.WriteTriangle(triangleCount, asteriskCountIncrement: 2, i);
             }
         }
     }

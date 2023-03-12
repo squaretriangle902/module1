@@ -13,7 +13,8 @@
         {
             for (int i = 0; i < height; i++)
             {
-                WriteTriangleRow(topOffset - i, asteriskCountIncrement * i + 1);
+                int newTopOffset = topOffset - i;
+                WriteTriangleRow(newTopOffset > 0 ? newTopOffset : 0, asteriskCountIncrement * i + 1);
             }
         }
 

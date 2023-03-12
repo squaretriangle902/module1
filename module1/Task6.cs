@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel.Design;
-
-namespace module1
+﻿namespace module1
 {
     public static class Task6
     {
@@ -35,17 +32,16 @@ namespace module1
         {
             ConsoleWriteEmphasis(emphasis);
             ConsoleWriteEmphasises();
-            Command command = ReadCommand("Incorrect command ID", "Enter command ID: ");
+            Command command = ReadCommand("Enter command ID: ", "Incorrect command ID");
             emphasis = ExecuteCommand(emphasis, command);
             return emphasis;
         }
 
-        private static Command ReadCommand(string errorMessage = "", string consoleMessage = "")
+        private static Command ReadCommand(string consoleMessage = "", string errorMessage = "")
         {
             while (true)
             {
-                int commandID;
-                if (ConsoleInputReader.TryReadInt(out commandID, consoleMessage) && 
+                if (ConsoleInputReader.TryReadInt(out int commandID, consoleMessage) && 
                    Enum.IsDefined(typeof(Command), commandID))
                 {
                     return (Command)commandID;

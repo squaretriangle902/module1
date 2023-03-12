@@ -7,7 +7,7 @@
             int[,,] array3d = new int[2, 3, 4];
             RandomFiller.FillArray3dWithRandom(array3d, lowerBound: -10, upperBound: 10);
             ConsoleWriteArray3d(array3d);
-            Array3dFill(array3d, number: 0);
+            Array3dReplace(array3d, number: 0);
             ConsoleWriteArray3d(array3d);
         }
 
@@ -26,7 +26,7 @@
             Console.WriteLine();
         }
 
-        private static void Array3dFill(int[,,] array3d, int number)
+        private static void Array3dReplace(int[,,] array3d, int number)
         {
             for (int i = array3d.GetLowerBound(0); i <= array3d.GetUpperBound(0); i++)
             {
