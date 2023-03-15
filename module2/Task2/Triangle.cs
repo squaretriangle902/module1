@@ -4,8 +4,9 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Module2;
 
-namespace module2
+namespace Module2.Task2
 {
     internal class Triangle
     {
@@ -68,7 +69,7 @@ namespace module2
 
         internal double Area
         {
-            get 
+            get
             {
                 double sideA = Point.Distance(b, c);
                 double sideB = Point.Distance(a, c);

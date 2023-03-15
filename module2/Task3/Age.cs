@@ -1,4 +1,4 @@
-﻿namespace module2
+﻿namespace Module2.Task3
 {
     internal struct Age
     {
@@ -15,7 +15,7 @@
 
         public override string ToString()
         {
-            return String.Format("years: {0}, months: {1}, days: {2}", year, month, day);
+            return string.Format("years: {0}, months: {1}, days: {2}", year, month, day);
         }
     }
 }

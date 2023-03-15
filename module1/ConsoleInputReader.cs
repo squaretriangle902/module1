@@ -1,4 +1,4 @@
-﻿namespace module1
+﻿namespace Module1
 {
     public static class ConsoleInputReader
     {

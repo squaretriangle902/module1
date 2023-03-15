@@ -1,4 +1,4 @@
-﻿namespace module2
+﻿namespace Module2
 {
     internal struct Point
 	{
@@ -24,7 +24,7 @@
 
         public override string ToString()
         {
-            return String.Format("({0}, {1})", x, y);
+            return String.Format("({0}; {1})", x, y);
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿namespace module1
+﻿namespace Module1
 {
     public static class Task5
     {
-        public static void Execute()
+        public static void Run()
         {
             Console.WriteLine(SummOfSatisfyingNumbers(strictUpperBound: 1000, firstDivisor: 3, secondDivisor: 5));
         }

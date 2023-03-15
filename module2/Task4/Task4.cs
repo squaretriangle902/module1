@@ -1,4 +1,4 @@
-﻿namespace module2
+﻿namespace Module2.Task4
 {
     internal static class Task4
     {

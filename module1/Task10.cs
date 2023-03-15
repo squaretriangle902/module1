@@ -1,8 +1,8 @@
-﻿namespace module1
+﻿namespace Module1
 {
     public static class Task10
     {
-        public static void Execute()
+        public static void Run()
         {
             int[,] array2d = new int[4, 3];
             RandomFiller.FillArray2dWithRandom(array2d, lowerBound: 0, upperBound: 10);

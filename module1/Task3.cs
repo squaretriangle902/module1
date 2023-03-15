@@ -1,8 +1,8 @@
-﻿namespace module1
+﻿namespace Module1
 {
     public static class Task3
     {
-        public static void Execute()
+        public static void Run()
         {
             int height = ConsoleInputReader.ReadIntUntilCorrect("Input triangle height: ");
             WriteTriangle(height);

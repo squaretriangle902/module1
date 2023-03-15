@@ -1,11 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace module2
+﻿namespace Module2.Task3
 {
     internal class User
     {
@@ -21,24 +14,24 @@ namespace module2
             Patronymic = patronymic;
             BirthDate = birthDate;
         }
-        
+
         internal string Name { get { return name; } set { name = value; } }
 
         internal string Surname { get { return surname; } set { surname = value; } }
 
         internal string Patronymic { get { return patronymic; } set { patronymic = value; } }
 
-        internal DateTime BirthDate 
-        { 
-            get {  return birthDate; } 
-            set 
-            { 
+        internal DateTime BirthDate
+        {
+            get { return birthDate; }
+            set
+            {
                 if (value > DateTime.Now)
                 {
                     throw new ArgumentException("Birth date cannot be greater than current date.");
                 }
-                birthDate = value.Date; 
-            } 
+                birthDate = value.Date;
+            }
         }
 
         internal Age Age

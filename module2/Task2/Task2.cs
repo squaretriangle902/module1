@@ -1,11 +1,12 @@
 ﻿using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
+using Module2;
 
-namespace module2
+namespace Module2.Task2
 {
-    static internal class Task2
+    internal static class Task2
     {
-        static internal void Run()
+        internal static void Run()
         {
             ConsoleInputReader.TryReadPoint(out Point a, "Input A:");
             ConsoleInputReader.TryReadPoint(out Point b, "Input B:");

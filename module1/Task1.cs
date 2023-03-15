@@ -1,8 +1,8 @@
-﻿namespace module1
+﻿namespace Module1
 {
     public static class Task1
     {
-        public static void Execute()
+        public static void Run()
         {
             int a = ReadPositiveIntUntilCorrect("Enter a: ");
             int b = ReadPositiveIntUntilCorrect("Enter b: ");

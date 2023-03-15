@@ -1,4 +1,6 @@
-﻿namespace module2
+﻿using Module2;
+
+namespace Module2.Task1
 {
     internal static class Task1
     {
@@ -11,6 +13,8 @@
                 {
                     Round round = new Round(center, radius);
                     Console.WriteLine("Round: {0}", round.ToString());
+                    Console.WriteLine("Circumference: {0}, area: {1}", 
+                                      round.Circumference.ToString(), round.Area.ToString());
                 }
                 catch (ArgumentException)
                 {

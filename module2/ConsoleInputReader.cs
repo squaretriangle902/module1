@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace module2
+﻿namespace Module2
 {
     static internal class ConsoleInputReader
     {

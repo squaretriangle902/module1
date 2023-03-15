@@ -1,4 +1,4 @@
-﻿namespace module2
+﻿namespace Module2
 {
     static public class Common
     {

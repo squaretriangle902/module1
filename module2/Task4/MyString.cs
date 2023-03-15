@@ -1,7 +1,4 @@
-﻿using System.Drawing;
-using System.Runtime.CompilerServices;
-
-namespace module2
+﻿namespace Module2.Task4
 {
     internal class MyString
     {
@@ -26,7 +23,7 @@ namespace module2
             }
         }
 
-        internal int Size { get { return myString.Length; } }   
+        internal int Size { get { return myString.Length; } }
 
         public char this[int index]
         { get { return myString[index]; } set { myString[index] = value; } }

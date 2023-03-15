@@ -1,10 +1,10 @@
-﻿namespace module1
+﻿namespace Module1
 {
     public static class Programm
     {
         public static void Main()
         {
-            Task2.Execute();
+            Task10.Run();
         }
     }
 }

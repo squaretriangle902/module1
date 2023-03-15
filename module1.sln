@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "module1", "module1\module1.csproj", "{0BB52FFF-A82D-4F33-99C4-ABCE2FE00CE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module1", "module1\Module1.csproj", "{0BB52FFF-A82D-4F33-99C4-ABCE2FE00CE4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "module2", "module2\module2.csproj", "{C03C2A02-E757-426F-BE5A-38C5BDDCEACF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module2", "module2\Module2.csproj", "{C03C2A02-E757-426F-BE5A-38C5BDDCEACF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B13DE9B2-731E-413A-8E4B-F7FE8E3F1FC8}"
 	ProjectSection(SolutionItems) = preProject
